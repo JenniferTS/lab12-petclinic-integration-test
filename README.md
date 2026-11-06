@@ -30,4 +30,5 @@ mvnw.cmd clean test "-Dspring.profiles.active=h2"
 
 | Ejercicio | Endpoint | Clase de prueba | Responsable |
 |---|---|---|---|
+| 1 | `/vets` | VetControllerTest | Sharon |
 <!-- cada integrante agrega su fila al terminar su ejercicio -->
