@@ -30,4 +30,5 @@ mvnw.cmd clean test "-Dspring.profiles.active=h2"
 
 | Ejercicio | Endpoint | Clase de prueba | Responsable |
 |---|---|---|---|
+| 5 | `/types` | TypesControllerTest | Fabricio |
 <!-- cada integrante agrega su fila al terminar su ejercicio -->
