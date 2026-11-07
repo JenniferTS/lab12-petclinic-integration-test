@@ -2,19 +2,8 @@ package com.tecsup.petclinic.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
-import org.springframework.format.annotation.DateTimeFormat;
 
-import java.util.Date;
-import java.util.Set;
-
-/**
- * 
- * @author jgomezm
- *
- */
 @NoArgsConstructor
 @Entity(name = "types")
 @Data
@@ -27,9 +16,19 @@ public class PetType {
 	@Column(name = "name")
 	private String name;
 
-//	@OneToMany(mappedBy = "type", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-//	@ToString.Exclude
-//	@EqualsAndHashCode.Exclude
-//	private Set<Pet> pets;
+	@Column(name = "description")
+	private String description;
+
+	@Column(name = "active")
+	private Boolean active;
+
+	@Column(name = "size_category")
+	private String sizeCategory;
+
+	@Column(name = "average_lifespan")
+	private Integer averageLifespan;
+
+	@Column(name = "care_level")
+	private String careLevel;
 
 }
