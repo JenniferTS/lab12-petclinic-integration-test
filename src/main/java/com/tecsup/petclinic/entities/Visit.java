@@ -2,16 +2,13 @@ package com.tecsup.petclinic.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
-/**
- * 
- * @author jgomezm
- *
- */
 @NoArgsConstructor
 @Entity(name = "visits")
 @Data
@@ -27,8 +24,16 @@ public class Visit {
 	@Column(name = "description")
 	private String description;
 
+	@Column(name = "cost")
+	private BigDecimal cost;
+
+	@Column(name = "vet_id")
+	private Integer vetId;
+
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "pet_id")
-	//@ToString.Exclude
+	@ToString.Exclude
+	@EqualsAndHashCode.Exclude
 	private Pet pet;
+
 }
