@@ -33,4 +33,5 @@ mvnw.cmd clean test "-Dspring.profiles.active=h2"
 | 1 | `/vets` | VetControllerTest | Sharon |
 | 2 | `/owners` | OwnerControllerTest | Piero |
 | 3 | `/specialties` | SpecialtyControllerTest | Fabricio |
+| 4 | `/visits` | VisitControllerTest | Avril |
 <!-- cada integrante agrega su fila al terminar su ejercicio -->
